@@ -41,5 +41,10 @@ public class Basket : MonoBehaviour {
 		score += 100; // add 100 points to the score
 		scoreGT.text = score.ToString();
 
+		if (score > HighScore.score) {
+			HighScore.score = score;
+		}
+			
+
 	}
 }
